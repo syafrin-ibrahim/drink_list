@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DrinkList</string>
+    <string name="like">like</string>
+    <string name="buy">buy</string>
+    <string name="harga">Harga</string>
+    <string name="glass">Glass</string>
+    <string name="metode">Metode</string>
+</resources>

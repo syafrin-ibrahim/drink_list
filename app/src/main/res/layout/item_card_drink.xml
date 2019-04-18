@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+        <ImageView
+            style="@style/img_preview"
+            android:id="@+id/img_drinks"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            tools:src="@color/colorAccent"
+             />
+        <TextView
+            style="@style/txtview_c"
+            android:id="@+id/txt_category"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Juice"/>
+       <TextView
+           style="@style/txtview_d"
+           android:id="@+id/txt_name"
+           android:layout_below="@+id/txt_category"
+           android:layout_alignLeft="@+id/txt_category"
+           android:layout_toRightOf="@+id/img_drinks"
+           tools:text="Orange Juice"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_drinks"
+            android:layout_toEndOf="@+id/img_drinks"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_like"
+                android:text="@string/like"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_buy"
+                android:text="@string/buy"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+            />
+            
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
